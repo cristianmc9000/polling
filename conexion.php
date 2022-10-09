@@ -6,5 +6,5 @@ $conexion->query("SET NAMES 'utf8'");
 if($conexion->connect_error) { 
 	die( 'Error: ('. $conexion->connect_errno .' )'. $conexion->connect_error); 
 }
-//cambios desde vs code
+
 ?>
