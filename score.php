@@ -12,7 +12,7 @@
 
 	//echo json_encode($result);
 	if (isset($_POST['last'])) {
-		set_time_limit(45); //Tiempo limite apropiado
+		set_time_limit(20); //Tiempo limite apropiado
 		ignore_user_abort(false);
 		//LOOP INFINITO
 		while (true) {
@@ -22,7 +22,7 @@
 				echo json_encode($score);
 				break;
 			}
-			sleep(3); // para prevenir el flooding
+			sleep(2); // para prevenir el flooding
 		}
 	}
 	
